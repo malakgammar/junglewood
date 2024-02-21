@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>commander</title>
+    <style>
+    h1{text-align: center;
+    text-decoration-line: underline;
+    margin-top: 40px;}
+    body{background-image: url("file:///C:/Users/Lenovo/Desktop/project/wallpaper.jpeg");}
+    fieldset{background-color: rgba(233, 231, 231, 0.789);
+    width: 50%;
+    height: 355px;
+    border-radius: 15px;
+    margin-top: 140px;
+    margin-left: 330px;
+    }
+    input[type="submit"]{margin-bottom: 0;}
+    </style>
+</head>
+<body>
+
+    <h1>Commander</h1>
+    <fieldset>
+        <table cellspacing="15px" >
+            <form method="post">
+                <tr>
+                    <td><strong><label for="name">Nom:</label></strong></td>
+                    <td><input type="text" id="pr" name="pr" placeholder="votre Nom"  required></td></td>
+                </tr>
+                <tr>
+                    <td><strong><label for="name">Prenom:</label></strong></td>
+                    <td><input type="text" id="nf" name="nf" placeholder="votre Prenom" required></td>
+                </tr>
+                <tr>
+                    <td><strong><label for="name"> Date de naissance:</strong></td>
+                    <td><input type="date" id="lf" name="lf" ></td> 
+                </tr>
+                <tr>
+                    <td><strong><label for="tel"> Téléphone portable:</strong></td>
+                    <td><input type="text" id="nf" name="nf" placeholder="0666666666" required><br></td>
+                </tr>
+                <tr>
+                    <td><strong><label for="emai"> E-mail:</strong></td>
+                    <td><input type="email" id="ng" name="ng" placeholder="@gmail.com"><br></td>
+                </tr>
+                <tr>
+                    <td><strong><label for="vill">Ville:</strong></td>
+                    <td>
+                        <select >
+                        <option value="c"> Casablanca </option>
+                        <option value="r"> Rabat</option>
+                        <option value="m"> Marrakesh</option>
+                        <option value="e"> Essaouira</option>
+                        <option value="t"> Tanger</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong><label for="ad">Adresse:</strong></td>
+                    <td ><input type="text"  placeholder="votre adresse" required><br></td>
+                </tr>
+                <tr>
+                    <td><strong><label for="paie">Paiement:</label></strong></td>
+                    <td><input type="radio" id="liv" value="liv" name="paie" required>A la livraison</td>
+                    <td><input type="radio" id="cart" value="cart" name="paie" required>Par carte</td>
+                </tr>
+                <tr>
+                    <td><strong><label for="pai">Numéro du compte:(si le paiment par carte)</label></strong></td>
+                    <td><input type="text" name="num" id="num"></td>
+                </tr>
+                <tr>
+                   <td><input type="submit" value="Envoyez" ></td>
+                   <td><input type="reset" value="reset"></td>
+                </tr>
+            </form>
+        </table>
+    </fieldset>
+
+</body>
+</html>
